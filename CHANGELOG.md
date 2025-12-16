@@ -1,6 +1,19 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## opentele-py313 Fork
+
+### [v1.15.2](https://pypi.org/project/opentele-py313/1.15.2/) - 2025-12-16
+
+**Python 3.13 Compatibility Fork**
+
+- Add Python 3.13 compatibility by ignoring `__firstlineno__` and `__static_attributes__` attributes in `extend_class` decorator.
+- Forked from original opentele v1.15.1 by thedemons.
+- Package renamed to `opentele-py313` to avoid conflicts with the original library.
+- All original functionality preserved.
+
+## Original opentele Releases
+
 ## [v1.15](https://pypi.org/project/opentele/1.15/) - 2022-01-27
 
 - Massive performance upgrade, UseCurrentSession is now 200x faster than before.

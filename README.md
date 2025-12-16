@@ -1,33 +1,25 @@
-<!-- vim: syntax=Markdown -->
-
-# opentele
+# opentele-py313
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/thedemons/opentele/main/opentele.png" alt="logo" width="180"/>
-<br><br>
-<a href="https://pypi.org/project/opentele/"><img alt="pypi version" src="https://img.shields.io/pypi/v/opentele?logo=pypi&logoColor=%232d93c1"/></a>
-<a href="https://pypi.org/project/opentele/"><img alt="pypi status" src="https://img.shields.io/pypi/status/opentele?color=%2331c754&logo=pypi&logoColor=%232d93c1"/></a>
-<a href="https://opentele.readthedocs.io/"><img alt="documentation" src="https://img.shields.io/readthedocs/opentele.svg?color=%2331c754&logo=readthedocs"/></a>
-<a href="https://codecov.io/gh/thedemons/opentele">
-<img src="https://img.shields.io/codecov/c/github/thedemons/opentele?color=%2331c754&label=codecov&logo=codecov&token=H2IWGEJ5LN"/>
-</a>
-<a href="https://github.com/thedemons/opentele/actions/workflows/package.yml"><img alt="workflow tests" src="https://img.shields.io/github/workflow/status/thedemons/opentele/package?logo=github&color=%2331c754"/></a>
-<a href="https://github.com/thedemons/opentele/issues"><img alt="issues" src="https://img.shields.io/github/issues/thedemons/opentele?color=%2331c754&logo=github"/></a>
-<a href="https://github.com/thedemons/opentele/commits/main"><img alt="github last commit" src="https://img.shields.io/github/last-commit/thedemons/opentele?color=%2331c754&logo=github"/></a>
-<a href="https://github.com/thedemons/opentele/commits/main"><img alt="github commits" src="https://img.shields.io/github/commit-activity/m/thedemons/opentele?logo=github"/></a>
-<a href="https://pypi.org/project/opentele/"><img alt="pypi installs" src="https://img.shields.io/pypi/dm/opentele?label=installs&logo=docusign&color=%2331c754"/></a>
-<a href="https://en.wikipedia.org/wiki/MIT_License"><img alt="pypi license" src="https://img.shields.io/pypi/l/opentele?color=%2331c754&logo=gitbook&logoColor=white"/></a>
-<a href="https://github.com/psf/black"><img alt="code format" src="https://img.shields.io/badge/code%20style-black-000000.svg?logo=python&logoColor=%232d93c1"/></a>
 </p>
 
-<br>
+## Python 3.13+ Compatible Fork
 
-A **Python Telegram API Library** for converting between **tdata** and **telethon** sessions, with built-in **official Telegram APIs**. [**Read the documentation**](https://opentele.readthedocs.io/en/latest/documentation/telegram-desktop/tdesktop/).
+This is a **Python 3.13+ compatible fork** of the [original opentele library](https://github.com/thedemons/opentele) by [thedemons](https://github.com/thedemons).
 
-# NOTICE
-Unfortunately, due to the lack of interest, I can no longer maintain this project and keep it up-to-date with the latest version of Telegram Desktop and Telethon.
-<br>
-If you have been using opentele for a while, I appreciate it, please consider contributing to the project, ask any questions in [Discussion](https://github.com/thedemons/opentele/discussions) and I'll try to help.
+### What's Changed?
+
+- **Python 3.13 Compatibility**: Fixed compatibility issues with Python 3.13 by handling new class attributes (`__firstlineno__` and `__static_attributes__`) in the `extend_class` decorator.
+- All original functionality remains intact.
+
+### Original Project
+
+This fork is based on [opentele v1.15.1](https://github.com/thedemons/opentele). All credit for the original library goes to [thedemons](https://github.com/thedemons).
+
+**Original repository**: https://github.com/thedemons/opentele
+
+---
 
 ## Features
 - Convert [Telegram Desktop](https://github.com/telegramdesktop/tdesktop) **tdata** sessions to [telethon](https://github.com/LonamiWebs/Telethon) sessions and vice versa.
@@ -41,8 +33,16 @@ If you have been using opentele for a while, I appreciate it, please consider co
 - [pyQt5](https://www.riverbankcomputing.com/software/pyqt/) - Used by Telegram Desktop to streams data from files.
 
 ## Installation
-- Install from [PyPI](https://pypi.org/project/opentele/):
-```pip title="pip"
+
+### For Python 3.13+
+Install this fork from PyPI:
+```bash
+pip install --upgrade opentele-py313
+```
+
+### For Python 3.12 and below
+Use the original library:
+```bash
 pip install --upgrade opentele
 ```
 
